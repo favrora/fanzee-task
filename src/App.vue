@@ -2,17 +2,20 @@
   <div id="app">
     <HeaderMenu />
     <Content />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HeaderMenu from "./components/Header";
-import Content from "./components/Content";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Content from "./MainPageContent";
 
 export default {
   name: "App",
   components: {
-    HeaderMenu,
+    Header,
+    Footer,
     Content
   },
 };

@@ -1,5 +1,5 @@
 /******************************
-******** Bloobloom CSS ********
+*********** App CSS ***********
 ******************************/
 
 /* @import 'bootstrap/dist/css/bootstrap.min.css'; */
@@ -8,6 +8,7 @@
 
 @import 'variables';
 @import 'header';
+@import 'footer';
 
 
 * {
@@ -30,179 +31,5 @@ img {
 }
 
 /** Content CSS **/
-.content {
-	margin-top: 40px;
-}
-
-@media screen and (min-width: 1366px) {
-	.content {
-		margin-top: 50px;
-	}
-}
-
-h1 {
-	text-transform: uppercase;
-	margin-top: 0;
-	padding-top: 10px;
-	font-size: 22px;
-	font-weight: bold;
-}
-
-/* Filters */
-.filter-row {
-	margin: 0;
-}
-
-.filter-row .filter-box {
-	padding: 0;
-}
-
-.filter-box.title-box {
-	text-align: center;
-	border-right: 1px solid #000;
-	border-left: 1px solid #000;
-}
-
-.filters-menu {
-	display: flex;
-	flex-flow: nowrap;
-	height: 100%;
-}
-
-.filters-menu div:hover,
-.filters-menu div.active {
-	background: #e1e1e1;
-}
-
-.filters-menu div {
-	display: flex;
-	align-items: center;
-	padding: 0 2rem;
-	border-right: 1px solid #000;
-	text-transform: uppercase;
-	cursor: pointer;
-	background: transparent;
-	transition: 300ms;
-}
-
-@media screen and (max-width: 576px) {
-	.filters-menu {
-		border-top: 1px solid #000;
-	}
-
-	.filters-menu div {
-		padding: 1rem 2rem;
-  }
-}
-
-.filter-items {
-	display: none;
-	padding: 0 1rem;
-	margin: 0;
-	border-top: 1px solid #000;
-	transform: translateY(-50px);
-	transition: 300ms;
-}
-
-.filter-items.active {
-	display: flex;
-	transform: translateY(0);
-}
-
-.filter-items .col {
-	display: flex;
-	align-items: center;
-	padding: 1rem 0.2rem;
-	cursor: pointer;
-}
-
-.colour-hover {
-	margin-right: 8px;
-	border-radius: 100%;
-	padding: 2px;
-	transition: 300ms;
-	border: 1px solid transparent;
-}
-
-.filter-items .col:hover .colour-hover,
-.filter-items .col.active .colour-hover {
-	border-color: #000;
-}
-
-.colour-preview {
-	display: block;
-	height: 16px;
-	width: 16px;
-	border-radius: 100%;
-	background-size: cover;
-}
-
-.colour-preview.coloured {
-	background-image: url('../img/filters/filters-coloured.png');
-}
-
-.colour-preview.tortoise {
-	background-image: url('../img/filters/filters-tortoise.png');
-}
 
 
-/* Shape Filters */
-.filter-items.shape .col {
-	max-width: fit-content;
-  padding-right: 2.5rem;
-}
-
-.filter-items.shape .col:hover,
-.filter-items.shape .col.active {
-	text-decoration: underline;
-}
-
-.collection-items {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.collection-items div.item {
-	background: #f6f6f4;
-	color: #2a2a2a;
-	text-align: center;
-	padding: 0;
-	cursor: pointer;
-	border-top: 1px solid #000;
-	border-right: 1px solid #000;
-}
-
-.collection-items div.item .title {
-	display: block;
-	margin-top: 10px;
-	text-transform: uppercase;
-}
-
-.collection-items div.item img {
-	transition: 300ms;
-	transform: scale(1);
-	min-height: 180px;
-}
-
-.collection-items div.item:hover img {
-	transform: scale(0.9);
-}
-
-/* loader */
-.loader-box {
-	padding-top: 20px;
-	border-top: 1px solid #000;
-}
-
-.loader {
-	background: url("../img/loader.gif");
-	width: 50px;
-	height: 50px;
-	margin: 0 auto;
-	background-size: contain;
-}
-
-.no-results {
-	font-size: 18px;
-	border-top: 1px solid #000;
-}
