@@ -1,0 +1,85 @@
+/*******************************
+********** Header CSS **********
+*******************************/
+
+#headerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #000;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  z-index: 10;
+}
+
+.header-item {
+  display: flex;
+  height: 100%;
+  padding: 0;
+}
+
+.header-item svg {
+  width: 107.56px;
+  height: 16.68px;
+}
+
+.header-logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.bloobloom-header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  color: #000!important;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.bloobloom-header-button:hover {
+  text-decoration: none;
+}
+
+.bloobloom-header-button span {
+  border-bottom: 3px solid transparent;
+  transition: 200ms;
+}
+
+.bloobloom-header-button.active span {
+  border-bottom-color: rgb(74, 74, 74);
+}
+
+.header-logo-item {
+  width: 100%;
+}
+
+.header-item.additional-link {
+  justify-content: flex-end;
+}
+
+/* Menu style for mobile */
+@media screen and (min-width: 1366px) {
+  #headerMenu {
+    height: 50px;
+  }
+
+  .header-item svg {
+    width: 138px;
+    height: 22px;
+  }
+}
+
+
