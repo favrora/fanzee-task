@@ -1,5 +1,5 @@
 <p align="left">
-    <img alt="Repository size" src="https://img.shields.io/github/repo-size/favrora/bloobloom-task?color=blue">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/favrora/fanzee-task?color=blue">
 </p>
 
 

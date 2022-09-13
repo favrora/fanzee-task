@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
+  <div id="detail">
     <Header />
-    <Content />
+
+    Detail
+
     <Footer />
   </div>
 </template>
@@ -9,18 +11,16 @@
 <script>
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Content from "./MainPageContent";
 
 export default {
-  name: "App",
+  name: "Detail",
   components: {
     Header,
-    Footer,
-    Content
+    Footer
   },
 };
 </script>
 
 <style>
-@import "./assets/css/main.css";
+  @import "./assets/css/detail.css";
 </style>
