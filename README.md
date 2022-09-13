@@ -43,5 +43,5 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 * Start the development server and open [`http://localhost:8080`](http://localhost:8080).
 
     ```sh
-    $ npm run serve
+    $ npm run dev
     ```
